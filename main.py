@@ -56,9 +56,13 @@ def get_all_forums_fid(bduss, stoken):
                         all_titles.append(title_tag['title'])
 
     results = [{"title": title, "fid": get_forum_fid(title)} for title in all_titles if get_forum_fid(title)]
-    with open('tieba.json', 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"结果已保存到 tieba.json 文件，包含 {len(results)} 个贴吧")
+    # 检查 results 是否为空
+    if results:
+        with open('tieba.json', 'w', encoding='utf-8') as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
+        print(f"结果已保存到 tieba.json 文件，包含 {len(results)} 个贴吧")
+    else:
+        print("未获取到任何贴吧的 fid！将直接读取 tieba.json 文件")
 
 def sign_forum(BDUSS, tiebainfo, tbs):
     url = "http://c.tieba.baidu.com/c/c/forum/sign"
