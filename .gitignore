@@ -3,6 +3,7 @@ __pycache__/
 .DS_Store
 
 # 运行时产物
+tieba.json
 tieba.json.tmp
 tieba.json.bak
 .env
