@@ -7,3 +7,6 @@ tieba.json
 tieba.json.tmp
 tieba.json.bak
 .env
+
+# 本地开发
+test_main.py

@@ -24,12 +24,6 @@ python3 main.py sign      # 只签到（不需要 STOKEN）
 
 常用选项：`--no-prune`（永不删除）、`--report run.json`（运行摘要）、`-v`（详细日志）。
 
-## 测试
-
-```bash
-python3 -m unittest test_main -v
-```
-
 ## 运行效果
 
 ![image1](./pic/image1.png)
