@@ -20,7 +20,7 @@ python3 main.py sign      # 只签到（不需要 STOKEN）
 
 不填凭据直接运行，脚本会提示输入。
 
-`tieba.json` 是增量缓存：抓取不完整时只增不删，写入前自动备份 `.bak`。
+`tieba.json` 是本地增量缓存（不纳入版本库）：抓取不完整时只增不删，写入前自动备份 `.bak`。
 
 常用选项：`--no-prune`（永不删除）、`--report run.json`（运行摘要）、`-v`（详细日志）。
 
