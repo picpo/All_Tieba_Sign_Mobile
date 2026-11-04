@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# 运行时产物
+tieba.json.tmp
+tieba.json.bak
+.env
